@@ -14,7 +14,7 @@ const Weather = () => {
   const [searchValue, setSearchValue] = useState('');
   const [cityId, setCityId] = useState<Key | null>(null);
   const [city, setCity] = useState<SimpleCityType | undefined>();
-  const [bookmarks, setBookmarks] = useState(bookmarksService.getBookmarks());
+  const [bookmarks, setBookmarks] = useState<SimpleCityType[]>([]);
 
   const { data, isLoading, error } = useQuery({
     queryKey: ['cities', searchValue],
@@ -60,6 +60,10 @@ const Weather = () => {
     );
     setBookmarks(bookmarksService.getBookmarks());
   };
+
+  useEffect(() => {
+    setBookmarks(bookmarksService.getBookmarks());
+  }, []);
 
   return (
     <div className='p-10 flex flex-col gap-8'>

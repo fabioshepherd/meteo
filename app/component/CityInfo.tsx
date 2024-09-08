@@ -37,7 +37,7 @@ const CityInfo = ({
     );
   }, [cityData]);
 
-  const { data, isLoading, error } = useQuery({
+  const { data } = useQuery({
     queryKey: ['city', cityData.latitude, cityData.longitude],
     queryFn: () => weatherApi.getWeather(cityData.latitude, cityData.longitude),
     enabled: !!cityData.latitude && !!cityData.longitude,
