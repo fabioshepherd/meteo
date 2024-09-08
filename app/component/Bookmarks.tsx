@@ -1,9 +1,10 @@
 import { ArrowsUpDownIcon } from '@heroicons/react/24/solid';
 import { Button } from '@nextui-org/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import SimpleCityType from '../service/type/SimpleCityType';
 import weatherApi from '../service/weatherApi';
-import Bookmark, { BookmarkWeatherType } from './Bookmark';
+import SimpleCityType from '../type/SimpleCityType';
+import Bookmark from './Bookmark';
+import BookmarkWeatherType from '../type/BookmarkWeatherType';
 
 const sortBookmarks = (
   bookmarks: BookmarkWeatherType[],

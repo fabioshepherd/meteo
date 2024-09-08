@@ -5,8 +5,8 @@ import { Key } from '@react-types/shared';
 import { useQuery } from '@tanstack/react-query';
 import { useCallback, useEffect, useState } from 'react';
 import bookmarksService from '../service/bookmarks';
-import SimpleCityType from '../service/type/SimpleCityType';
 import weatherApi from '../service/weatherApi';
+import SimpleCityType from '../type/SimpleCityType';
 import Bookmarks from './Bookmarks';
 import CityInfo from './CityInfo';
 

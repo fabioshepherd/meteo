@@ -4,7 +4,7 @@ import {
   CityWeatherType,
   searchCitySchema,
   SearchCityType,
-} from './type/weatherType';
+} from '../type/weatherType';
 
 const searchCity = async (city: string): Promise<SearchCityType> => {
   const url = `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=10&language=it&format=json`;

@@ -1,12 +1,8 @@
 import { Card } from '@nextui-org/react';
 import { useCallback } from 'react';
-import SimpleCityType from '../service/type/SimpleCityType';
-import { CityWeatherType } from '../service/type/weatherType';
+import SimpleCityType from '../type/SimpleCityType';
 import wmoIcons from '../utils/wmoIcons';
-
-export interface BookmarkWeatherType extends CityWeatherType {
-  cityName: string;
-}
+import BookmarkWeatherType from '../type/BookmarkWeatherType';
 
 interface BookmarkProps {
   weather: BookmarkWeatherType;

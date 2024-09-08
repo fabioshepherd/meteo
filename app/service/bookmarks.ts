@@ -1,4 +1,4 @@
-import SimpleCityType from './type/SimpleCityType';
+import SimpleCityType from '../type/SimpleCityType';
 
 const LOCAL_STORAGE_KEY = 'weatherBookmarks';
 
